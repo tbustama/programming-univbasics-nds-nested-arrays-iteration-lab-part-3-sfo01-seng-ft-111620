@@ -6,7 +6,7 @@ def join_nested_strings(src)
   while row_idx < src.length do 
     column_idx = 0 
     while column_idx < src[row_idx].length do 
-      if srx[row_idx][column_idx]
+      if srx[row_idx][column_idx].class == "Integer"
       column_idx += 1
     end
     row_idx += 1
