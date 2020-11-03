@@ -6,9 +6,12 @@ def join_nested_strings(src)
   while row_idx < src.length do 
     column_idx = 0 
     while column_idx < src[row_idx].length do 
-      if srx[row_idx][column_idx].class == "Integer"
+      if src[row_idx][column_idx].class == "String"
+        sent <<  src[row_idx][column_idx]
+      end
       column_idx += 1
     end
     row_idx += 1
   end
+  p sent.join(" ")
 end
